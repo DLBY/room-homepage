@@ -1,0 +1,53 @@
+/********************Variables*********************/
+:root {
+  /* Colors */
+  --dark-gray: hsl(163, 72%, 41%);
+  --black: hsl(356, 69%, 56%);
+  --white: hsl(208, 92%, 53%);
+  --very-dark-gray: hsl(203, 89%, 53%);
+
+  /* typo */
+  --basic:12px;
+  --first-heading:1.5em; 
+  --second-heading:1.2em; 
+  --semi-bold: 500;
+  --bold: 600;
+  --very-bold:700;
+}
+
+/* Font */
+@font-face {
+  font-family: 'spartan';
+  src: url('./assets/font/spartan/Spartan-variables.ttf');
+}
+
+/* Overall style */
+* {
+  font-family: 'spartan';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+  padding:2em;
+  width:100%;
+}
+.navigation {
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hidden {
+  display: none;
+}
+/**************** Media queries ****************/
+@media (min-width: 48em) {}
+@media (min-width: 90em) {}
+
+body {
+}
