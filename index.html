@@ -32,30 +32,45 @@
     </header>
     <main>
       <section>
-        <div>
+        <div class="container">
           <div class="carousel header__img">
             <picture>
               <source
                 srcset="./assets/images/desktop/desktop-image-hero-1.jpg"
-                media="(min-width: 1024px)"
+                media="(min-width: 85.33em)"
               />
               <img
                 src="./assets/images/mobile/mobile-image-hero-1.jpg"
                 alt="img"
+                class="header__img"
               />
             </picture>
           </div>
-          <div class="">
-            <h1>Discover innovative ways to decorate</h1>
-            <p>
-              We provide unmatched quality, comfort, and style for property
-              owners across the country. Our experts combine form and function
-              in bringing your vision to life. Create a room in your own style
-              with our collection and make your property a reflection of you and
-              what you love.
-            </p>
-            <a href="#">Shop now</a>
+          <div class="header__btnWrap">
+            <button class="header__btn prev">
+              <img
+                src="./assets/images/svgs/icon-angle-left.svg"
+                alt="previous icon"
+              />
+            </button>
+            <button class="header__btn next">
+              <img
+                src="./assets/images/svgs/icon-angle-right.svg"
+                alt="next icon"
+              />
+            </button>
           </div>
+        </div>
+        <div class="">
+          <h1>Discover innovative ways to decorate</h1>
+          <p>
+            We provide unmatched quality, comfort, and style for property owners
+            across the country. Our experts combine form and function in
+            bringing your vision to life. Create a room in your own style with
+            our collection and make your property a reflection of you and what
+            you love.
+          </p>
+          <a href="#">Shop now</a>
         </div>
         <div class="hidden">
           <h1>We are available all across the globe</h1>

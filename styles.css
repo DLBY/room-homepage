@@ -1,10 +1,10 @@
 /********************Variables*********************/
 :root {
   /* Colors */
-  --dark-gray: hsl(163, 72%, 41%);
-  --black: hsl(356, 69%, 56%);
-  --white: hsl(208, 92%, 53%);
-  --very-dark-gray: hsl(203, 89%, 53%);
+  --dark-gray: hsl(0, 0%, 63%);
+  --black: hsl(0, 0%, 0%);
+  --white: (0, 0%, 100%);
+  --very-dark-gray: hsl(0, 0%, 27%);
 
   /* typo */
   --basic:12px;
@@ -24,15 +24,46 @@
 /* Overall style */
 * {
   font-family: 'spartan';
+  font-size:var(--basic);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/**
+* Header
+**/
 header {
   position: absolute;
-  padding:2em;
+  z-index:10;
+  padding: 4em 1.5em;
   width:100%;
+}
+.header__img {
+  height:30em;
+  width:100%;
+  object-fit: cover;
+}
+.header__btnWrap {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  right:0;
+}
+.header__btn {
+  padding:1.6em;
+  border:none;
+  cursor: pointer;
+  background-color: var(--black);
+}
+.header__btn img {
+  font-size: 10px;
+  width: 1.4em;
+  height:1.8em;
+}
+.container {
+  position: relative;
+  z-index:1
 }
 .navigation {
   display:flex;
