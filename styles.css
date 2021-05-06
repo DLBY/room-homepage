@@ -8,8 +8,8 @@
 
   /* typo */
   --basic:12px;
-  --first-heading:1.5em; 
-  --second-heading:1.2em; 
+  --first-heading:2em; 
+  --second-heading:1.1em; 
   --semi-bold: 500;
   --bold: 600;
   --very-bold:700;
@@ -38,6 +38,10 @@ header {
   z-index:10;
   padding: 4em 1.5em;
   width:100%;
+}
+.header__img-container {
+  height:30em;
+  object-fit: cover;
 }
 .header__img {
   height:30em;
@@ -73,8 +77,43 @@ header {
   justify-content: space-between;
 }
 
+/* cards */
+.card {
+  padding: 3.5em 2.5em;
+}
+.card h1 {
+  font-size: var(--first-heading);
+}
+.card__content {
+  color:var(--very-dark-gray);
+  font-weight: var(--semi-bold);
+  margin-top:1em;
+}
+.card__link--container {
+  margin-top:3.5em;
+}
+.card__link {
+  letter-spacing: .9em;
+  text-transform: uppercase;
+  color: var(--very-dark-gray);
+  font-weight: var(--bold);
+  text-decoration: none;
+}
+.card__link--container img {
+  margin-left:1.5em;
+}
 .hidden {
   display: none;
+}
+/* About */
+.card h2 {
+  letter-spacing:.2em;
+  font-weight: var(--very-bold);
+  text-transform: uppercase;
+  font-size: var(--second-heading);
+}
+.about img {
+  width:100%;
 }
 /**************** Media queries ****************/
 @media (min-width: 48em) {}
