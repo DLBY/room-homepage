@@ -15,16 +15,36 @@
     <title>Frontend Mentor | Room homepage</title>
   </head>
   <body>
+    <div class="modal hidden">
+      <div class="modal__content">
+        <div></div>
+        <ul>
+          <li>Home</li>
+          <li>Home</li>
+          <li>Home</li>
+        </ul>
+      </div>
+    </div>
     <header>
       <nav>
         <div class="navigation">
-          <div>
-            <a href="#"
-              ><img
-                src="./assets/images/svgs/icon-hamburger.svg"
-                alt="hamburger menu"
-            /></a>
-          </div>
+          <button id="menu-btn" class="menu-btn header__menu-btn">
+            <span
+              aria-hidden="true"
+              class="menu-btn__bar menu-btn__bar--1"
+              id="bar_element"
+            ></span>
+            <span
+              aria-hidden="true"
+              class="menu-btn__bar menu-btn__bar--2"
+              id="bar_element"
+            ></span>
+            <span
+              aria-hidden="true"
+              class="menu-btn__bar menu-btn__bar--3"
+              id="bar_element"
+            ></span>
+          </button>
           <img src="./assets/images/svgs/logo.svg" alt="logo" />
           <div class="links"></div>
         </div>
@@ -124,4 +144,5 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </footer>
   </body>
+  <script async src="script.js"></script>
 </html>

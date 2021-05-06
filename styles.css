@@ -29,7 +29,92 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* modal */
+.modal {
+  display:none;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index:10;
+}
+.modal.animate-active {
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+.modal.animate-inactive {
+  -webkit-animation-name: animate--inactive;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animate--inactive;
+  animation-duration: 0.4s
+}
+.modal__content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 4em 1.5em;
+}
+ul > li {
+  display: inline-block;
+}
 
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+@-webkit-keyframes animate--inactive {
+  from {top:0; opacity:0} 
+  to {top:-300px; opacity:1}
+}
+@keyframes animate--inactive {
+  from {top:0; opacity:0}
+  to {top:-300px; opacity:1}
+}
+
+/* burger btn */
+
+.menu-btn {
+  z-index:30;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.menu-btn__bar {
+  display: inline-block;
+  width: 30px;
+  height: 4px;
+  background-color: red;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.menu-btn--active .menu-btn__bar--1 {
+  -webkit-transform: translate(-3px, 8px) rotate(45deg);
+          transform: translate(-3px, 8px) rotate(45deg);
+  background-color: var(--dark-gray);
+}
+
+.menu-btn--active .menu-btn__bar--2 {
+  opacity: 0;
+  transition: all .2s;
+}
+
+.menu-btn--active .menu-btn__bar--3 {
+  -webkit-transform: translate(-3px, -8px) rotate(-45deg);
+          transform: translate(-3px, -8px) rotate(-45deg);
+  background-color: var(--dark-gray);
+}
 /**
 * Header
 **/
@@ -72,7 +157,6 @@ header {
 .navigation {
   display:flex;
   flex-direction: row;
-  width: 100%;
   align-items: center;
   justify-content: space-between;
 }
@@ -85,6 +169,7 @@ header {
   font-size: var(--first-heading);
 }
 .card__content {
+  line-height: 1.5em;
   color:var(--very-dark-gray);
   font-weight: var(--semi-bold);
   margin-top:1em;
@@ -103,7 +188,10 @@ header {
   margin-left:1.5em;
 }
 .hidden {
-  display: none;
+
+}
+.active {
+  display: block;
 }
 /* About */
 .card h2 {
@@ -115,9 +203,8 @@ header {
 .about img {
   width:100%;
 }
+
+
 /**************** Media queries ****************/
 @media (min-width: 48em) {}
 @media (min-width: 90em) {}
-
-body {
-}
