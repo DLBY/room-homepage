@@ -54,7 +54,7 @@
     <main>
       <section>
         <div class="container">
-          <div class="carousel header__img-container">
+          <div class="carousel header__img-container" id="carouselImg">
             <picture>
               <source
                 srcset="./assets/images/desktop/desktop-image-hero-1.jpg"
@@ -67,14 +67,40 @@
               />
             </picture>
           </div>
+          <div class="carousel header__img-container" id="carouselImg">
+            <picture>
+              <source
+                srcset="./assets/images/desktop/desktop-image-hero-2.jpg"
+                media="(min-width: 85.33em)"
+              />
+              <img
+                src="./assets/images/mobile/mobile-image-hero-2.jpg"
+                alt="img"
+                class="header__img"
+              />
+            </picture>
+          </div>
+          <div class="carousel header__img-container" id="carouselImg">
+            <picture>
+              <source
+                srcset="./assets/images/desktop/desktop-image-hero-3.jpg"
+                media="(min-width: 85.33em)"
+              />
+              <img
+                src="./assets/images/mobile/mobile-image-hero-3.jpg"
+                alt="img"
+                class="header__img"
+              />
+            </picture>
+          </div>
           <div class="header__btnWrap">
-            <button class="header__btn prev">
+            <button class="header__btn prev" id="prev">
               <img
                 src="./assets/images/svgs/icon-angle-left.svg"
                 alt="previous icon"
               />
             </button>
-            <button class="header__btn next">
+            <button class="header__btn next" id="next">
               <img
                 src="./assets/images/svgs/icon-angle-right.svg"
                 alt="next icon"
@@ -82,7 +108,7 @@
             </button>
           </div>
         </div>
-        <div class="card">
+        <div class="card" id="carouselContent">
           <h1>Discover innovative ways to decorate</h1>
           <p class="card__content">
             We provide unmatched quality, comfort, and style for property owners
@@ -145,5 +171,6 @@
       >. Coded by <a href="#">Your Name Here</a>.
     </footer>
   </body>
-  <script async src="script.js"></script>
+  <script async src="modal.js"></script>
+  <script async src="carousel.js"></script>
 </html>
