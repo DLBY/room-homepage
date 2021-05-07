@@ -3,6 +3,7 @@ let swipeNext = document.getElementById('next');
 let carouselContent = document.getElementById('carouselContent');
 
 let currentSlide = 1;
+let currentSlideContent = 1;
 
 const showSlide = (slideIndex) => {
   const slides = document.getElementsByClassName('header__img-container');
@@ -19,19 +20,40 @@ const showSlide = (slideIndex) => {
   slides[currentSlide - 1].style.display='flex'
 }
 
+const showSlideContent = (slideIndexContent) => {
+  const slidesContent = document.getElementsByClassName('card__slider');
+  
+  if (slideIndexContent > slidesContent.length) {
+    currentSlideContent = 1;
+  }
+  if (slideIndexContent < 1) {
+    currentSlideContent = slidesContent.length
+  }
+  for (let i =0; i < slidesContent.length; i++) {
+    slidesContent[i].style.display = 'none'
+  }
+  slidesContent[currentSlideContent - 1].style.display='flex'
+}
+
 const previousSlide = () => {
-  showSlide(currentSlide += 1);
+  showSlide(currentSlide -= 1);
+  showSlideContent(currentSlideContent -= 1);
 }
 const nextSlide = () => {
   showSlide(currentSlide += 1);
+  showSlideContent(currentSlideContent += 1);
 }
 
 window.onload = () => {
   showSlide(currentSlide);
+  showSlideContent(currentSlideContent);
+
   swipePrev.addEventListener('click', () => {
     previousSlide();
+    previousSlideContent();
   })
   swipeNext.addEventListener('click', () => {
     nextSlide();
+    nextSlideContent();
   })
 }

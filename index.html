@@ -17,7 +17,6 @@
   <body>
     <div class="modal hidden">
       <div class="modal__content">
-        <div></div>
         <ul>
           <li>home</li>
           <li>shop</li>
@@ -108,7 +107,7 @@
             </button>
           </div>
         </div>
-        <div class="card" id="carouselContent">
+        <div class="card card__slider" id="carouselContent">
           <h1>Discover innovative ways to decorate</h1>
           <p class="card__content">
             We provide unmatched quality, comfort, and style for property owners
@@ -126,26 +125,40 @@
             />
           </div>
         </div>
-        <div class="hidden">
+        <div class="card card__slider" id="carouselContent">
           <h1>We are available all across the globe</h1>
-          <p>
+          <p class="card__content">
             With stores all over the world, it's easy for you to find furniture
             for your home or place of business. Locally, we’re in most major
             cities throughout the country. Find the branch nearest you using our
             store locator. Any questions? Don't hesitate to contact us today.
           </p>
-          <a href="#">Shop now</a>
+          <div class="card__link--container">
+            <a href="#" class="card__link">Shop now</a>
+            <img
+              src="./assets/images/svgs/icon-arrow.svg"
+              alt="icon arrow"
+              class="card_link--icon"
+            />
+          </div>
         </div>
-        <div class="hidden">
+        <div class="card card__slider" id="carouselContent">
           <h1>Manufactured with the best materials</h1>
-          <p>
+          <p class="card__content">
             Our modern furniture store provide a high level of quality. Our
             company has invested in advanced technology to ensure that every
             product is made as perfect and as consistent as possible. With three
             decades of experience in this industry, we understand what customers
             want for their home and office.
           </p>
-          <a href="#">Shop now</a>
+          <div class="card__link--container">
+            <a href="#" class="card__link">Shop now</a>
+            <img
+              src="./assets/images/svgs/icon-arrow.svg"
+              alt="icon arrow"
+              class="card_link--icon"
+            />
+          </div>
         </div>
       </section>
       <section class="about">
@@ -165,10 +178,15 @@
       </section>
     </main>
     <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      <div>
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >
+        </p>
+        Coded by <a href="https://github.com/DLBY">D. Lobry</a>
+      </div>
     </footer>
   </body>
   <script async src="modal.js"></script>
