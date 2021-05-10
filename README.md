@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/room-landing-page-9Ck90gyVVAdd solution URL here](https://www.frontendmentor.io/solutions/room-landing-page-9Ck90gyVVhttps://your-solution-url.com)
-- Live Site URL: [https://dlby.github.io/room-homepage/Add live site URL here](https://dlby.github.io/room-homepage/https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/room-landing-page-9Ck90gyVV](https://www.frontendmentor.io/solutions/room-landing-page-9Ck90gyVVhttps://your-solution-url.com)
+- Live Site URL: [https://dlby.github.io/room-homepage/](https://dlby.github.io/room-homepage/https://your-live-site-url.com)
 
 ## My process
 
