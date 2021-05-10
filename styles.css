@@ -229,6 +229,10 @@ header {
 }
 .active {
   display: block;
+  -webkit-animation-name: animate--inactive;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animate--inactive;
+  animation-duration: 0.4s
 }
 /* About */
 .card h2 {
@@ -245,50 +249,6 @@ header {
 /* Carousel */
 .header__img-container {
   display: none;
-}
-@keyframes tonext {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: 100%;
-  }
-  98% {
-    left: 100%;
-  }
-  99% {
-    left: 0;
-  }
-}
-
-@keyframes tostart {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: -300%;
-  }
-  98% {
-    left: -300%;
-  }
-  99% {
-    left: 0;
-  }
-}
-
-@keyframes snap {
-  96% {
-    scroll-snap-align: center;
-  }
-  97% {
-    scroll-snap-align: none;
-  }
-  99% {
-    scroll-snap-align: none;
-  }
-  100% {
-    scroll-snap-align: center;
-  }
 }
 
 /* Footer */
@@ -339,7 +299,6 @@ footer a {
     transform: scaleX(1);
   
   }
-
   .navigation {
     justify-content:flex-start;
     color:white;
@@ -364,6 +323,7 @@ footer a {
     width:100%;
   }
   .about .card {
+    height:40vh;
     flex:1 1 45%;
   }
   .about img {
@@ -384,9 +344,10 @@ footer a {
 }
 @media (min-width: 89.99em) {
   .top {
-  height:50vh;}
+  height:50vh;
+}
   .header__img-container {
-    height:50vh;
+    height:100%;
   }
   .header__img {
     min-width:890px;
@@ -406,4 +367,10 @@ footer a {
   }
   .card {
   padding: 6.5em 5.5em;}
+}
+
+@media (min-width: 1920px) {
+  .header__btnWrap {
+    right: 4.5em;
+  }
 }
