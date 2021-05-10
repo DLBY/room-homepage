@@ -50,10 +50,8 @@ window.onload = () => {
 
   swipePrev.addEventListener('click', () => {
     previousSlide();
-    previousSlideContent();
   })
   swipeNext.addEventListener('click', () => {
     nextSlide();
-    nextSlideContent();
   })
 }

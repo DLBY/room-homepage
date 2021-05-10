@@ -3,6 +3,8 @@ let modal = document.querySelector(".modal")
 let closeBtn = document.getElementById("menu-btn")
 let bar = document.getElementById("bar_element")
 
+let mainPage = document.getElementById("main")
+
 // Navigation
 
 const toggleNav = () => {
@@ -19,6 +21,7 @@ const toggleNav = () => {
       modal.classList.remove('animate-active')
       modal.classList.add('animate-inactive')
     }
+    main.classList.toggle('darker-filter')
     modalBtn.classList.toggle('menu-btn--active');
   }
 }
