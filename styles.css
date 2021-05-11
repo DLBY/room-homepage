@@ -268,6 +268,9 @@ footer a {
 }
 /**************** Media queries ****************/
 @media (min-width: 52em) {
+  .about {
+    align-items:start;
+  }
   .links {
     display:block;
     margin-left:2em;
@@ -354,9 +357,6 @@ footer a {
   .header__img {
     min-width:890px;
     height:100%;
-  }
-  .about {
-    align-items:start;
   }
   .about .card {
     display:flex;

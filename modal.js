@@ -1,7 +1,7 @@
 let modalBtn = document.getElementById("menu-btn")
 let modal = document.querySelector(".modal")
 let closeBtn = document.getElementById("menu-btn")
-let bar = document.getElementById("bar_element")
+let bar = document.getElementsByClassName("menu-btn__bar")
 
 let mainPage = document.getElementById("main")
 

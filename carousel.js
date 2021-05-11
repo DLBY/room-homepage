@@ -1,6 +1,6 @@
 let swipePrev = document.getElementById('prev');
 let swipeNext = document.getElementById('next');
-let carouselContent = document.getElementById('carouselContent');
+let carouselContent = document.getElementsByClassName('card__slider');
 
 let currentSlide = 1;
 let currentSlideContent = 1;
