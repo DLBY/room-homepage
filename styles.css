@@ -335,6 +335,7 @@ footer a {
     right:-10em;
   }
 }
+
 @media (min-width: 64em) {
   .about .card {
     flex:1 1 56%;
@@ -342,6 +343,7 @@ footer a {
   .card {
     padding: 3.5em 4.5em;}
 }
+
 @media (min-width: 89.99em) {
   .top {
   height:50vh;
@@ -353,10 +355,12 @@ footer a {
     min-width:890px;
     height:100%;
   }
+  .about {
+    align-items:start;
+  }
   .about .card {
     display:flex;
     flex-direction: column;
-    justify-content:center;
     flex:1 1 50%;
   }
   .card__slider {
